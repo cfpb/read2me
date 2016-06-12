@@ -1,6 +1,6 @@
 {
   "name": "read2me",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "description": "Pass strings to a function at a reading pace.",
   "homepage": "https://github.com/cfpb/read2me",

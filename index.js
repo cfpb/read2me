@@ -29,7 +29,7 @@ function read2me(lines, func, cb) {
     for (var i = 0; i < lines.length; i++) {
       yield delay(lines[i], func, resume)
     }
-    cb();
+    if (cb) cb();
   })
 
 }
