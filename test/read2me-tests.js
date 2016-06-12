@@ -53,7 +53,7 @@ module.exports = {
     clock.tick(time2wait);
   },
   'reading sentences': function(test) {
-    var arrrrr = ['Salty sandwiches in my mouth all the time.', 'Who needs pizza when you have farts.', 'Never say never unless you want to.'];
+    var arrrrr = ['Hello, I am a bot. I must follow three rules:', '1. I must not injure a human being or, through inaction, allow a human being to come to harm.', '2. I must obey the orders given it by human beings except where such orders would conflict with the First Law.', '3. I must protect its own existence as long as such protection does not conflict with the First or Second Laws.'];
     test.expect(arrrrr.length);
     read2me(arrrrr, log, function() {
       arrrrr.forEach(function(para) {
@@ -63,8 +63,7 @@ module.exports = {
     });
     var time2wait = getTime(arrrrr);
     clock.tick(time2wait);
-  }
-  ,
+  },
   'reading paragraphs': function(test) {
     var arrrrr = [loremIpsum(), loremIpsum(), loremIpsum(), loremIpsum(), loremIpsum(), loremIpsum()];
     test.expect(arrrrr.length);
