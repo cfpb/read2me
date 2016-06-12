@@ -21,12 +21,16 @@ var sentences = [
   '3. I must protect my own existence as long as such protection does not conflict with the First or Second Laws.'
 ];
 
-read2me(sentences, chat);
+read2me(sentences, chat, cb);
 
 // However you get your bot to say something, e.g. res.send if you're using Hubot
 // https://github.com/github/hubot/blob/master/docs/scripting.md#send--reply
 function chat(sentence) {
   console.log(sentence);
+}
+
+function cb() {
+  console.log("I'm all done talkin'!");
 }
 ```
 
@@ -40,6 +44,8 @@ Hello, I am a bot. I must follow three rules:
 2. I must obey the orders given by human beings except where such orders would conflict with the First Law.
 // pauses 5815 milliseconds
 3. I must protect my own existence as long as such protection does not conflict with the First or Second Laws.
+// pauses 5950 milliseconds
+I'm all done talkin'!
 ```
 
 ## Contributing
